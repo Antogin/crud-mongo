@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 
 const StationSchema = new mongoose.Schema({
-	name: String
+	name: String,
 });
 
 mongoose.model('Station', StationSchema);
