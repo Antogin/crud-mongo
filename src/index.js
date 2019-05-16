@@ -5,6 +5,7 @@ const app = express()
 const path = require('path')
 const bodyParser = require('body-parser')
 const stationConctoller = require('./controllers/station.controller')
+const carController = require('./controllers/car.controller')
 
 
 
@@ -16,6 +17,7 @@ app.use((req, res, next) => {
 })
 
 app.use('/station', stationConctoller)
+app.use('/car', carController)
 
 app.use('/static', express.static('static'))
 
